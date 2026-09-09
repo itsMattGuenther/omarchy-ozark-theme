@@ -26,7 +26,7 @@ teal-and-olive forest. Dark first, readable always.
 ## 📦 Install
 
 ```bash
-omarchy theme install https://github.com/matthewguenther/omarchy-ozark-theme.git
+omarchy theme install https://github.com/itsMattGuenther/omarchy-ozark-theme.git
 ```
 
 The theme is applied right away. Later, switch with:
