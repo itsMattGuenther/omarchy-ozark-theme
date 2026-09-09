@@ -1,0 +1,9 @@
+# cliamp theme — copy to ~/.config/cliamp/themes/ozark.toml
+# Same palette as colors.toml: indigo dusk, coral sunset accent.
+bg = "#171525"
+accent = "#ef9268"
+bright_fg = "#f4f1f7"
+fg = "#9990b0"
+green = "#9cbe80"
+yellow = "#dcb473"
+red = "#e8828a"

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 576" width="896" height="576">
+  <rect width="896" height="576" fill="#fff"/>
+
+  <g fill="#000">
+    <circle cx="596" cy="108" r="15"/>
+    <path d="M580 130 h32 l -5 48 h -22 Z"/>
+    <path d="M584 176 l -11 34 h 16 l 6 -34 Z"/>
+    <path d="M607 176 l 12 34 h -16 l -6 -34 Z"/>
+    <path d="M579 134 l -21 34 l 11 7 l 20 -31 Z"/>
+  </g>
+
+  <g fill="#000">
+    <path d="M34 214 l 18 -58 l 18 58 Z"/>
+    <path d="M94 212 l 14 -42 l 14 42 Z"/>
+    <path d="M162 210 l 16 -50 l 16 50 Z"/>
+    <path d="M238 212 l 13 -38 l 13 38 Z"/>
+  </g>
+
+  <!-- the crag, the only solid mass in the picture -->
+  <path d="M0 216
+           L140 214 L300 212 L460 210 L570 212
+           q 54 0 80 6 q 16 4 16 10 q 0 8 -20 11
+           q -52 8 -114 4
+           q -98 -6 -190 8
+           q -100 15 -182 34
+           L0 356 Z" fill="#000"/>
+  <path d="M0 356 q 32 24 46 70 q 12 40 14 150 L0 576 Z" fill="#000"/>
+
+  <!-- layered ridgelines falling away into the valley: outlines, not slabs -->
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round">
+    <path d="M250 400 q 92 -36 182 -10 q 76 22 148 -14 q 70 -34 142 -6 q 46 18 96 -10"/>
+    <path d="M186 452 q 104 -40 206 -10 q 84 24 164 -16 q 78 -36 152 -6 q 50 20 108 -12"/>
+    <path d="M126 508 q 116 -42 230 -12 q 92 24 180 -18 q 84 -38 166 -6 q 54 20 116 -14"/>
+    <path d="M74 562 q 128 -44 252 -14 q 100 24 196 -18 q 90 -38 178 -6 q 58 20 126 -16"/>
+  </g>
+</svg>
