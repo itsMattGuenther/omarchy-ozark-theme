@@ -42,18 +42,7 @@ omarchy theme bg next        # cycle wallpapers
 ![Wallpapers](docs/wallpapers.jpg)
 
 Eight variants live in `backgrounds/`, all exported at 3840x2160. Each design
-has an Omarchy wordmark version followed by a version without lettering:
-
-| Design | With wordmark | Without wordmark |
-| --- | --- | --- |
-| Cell-shaded mountains | [01](backgrounds/01_ozark_mountains_cell_shaded_omarchy.jpg) | [02](backgrounds/02_ozark_mountains_cell_shaded.jpg) |
-| Brush-painted mountains | [03](backgrounds/03_ozark_mountains_brush_omarchy.jpg) | [04](backgrounds/04_ozark_mountains_brush.jpg) |
-| Moonlit bluff blockprint | [05](backgrounds/05_ozark_bluff_blockprint_omarchy.jpg) | [06](backgrounds/06_ozark_bluff_blockprint.jpg) |
-| Ozark contours | [07](backgrounds/07_ozark_contours_omarchy.jpg) | [08](backgrounds/08_ozark_contours.jpg) |
-
-The bluff and contour logo versions feature a large centered Omarchy wordmark:
-textured lavender ink on the bluff, and warm coral on the contour map. These
-images are AI-generated and upscaled to 4K.
+has an Omarchy wordmark version followed by a version without lettering.
 
 They sort by filename, so the numbered prefixes decide the order
 `omarchy theme bg next` walks. Add your own next to them, or drop
