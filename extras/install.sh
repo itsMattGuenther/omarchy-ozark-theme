@@ -34,11 +34,19 @@ fi
 mkdir -p "$OZ_DIR" "$HOME/.config/cliamp/themes"
 cp "$HERE/cliamp/ozark.toml" "$HOME/.config/cliamp/themes/ozark.toml"
 
-# The About logo is plain text; tint each line with the theme's coral accent
-# so it stays coloured under Omarchy's default fastfetch config.
-sed 's/^/\x1b[38;2;239;146;104m/' "$HERE/art/ozark-ridge.txt" > "$OZ_DIR/about.txt"
+# Recognize the installed art before replacing it, so the hook does not
+# mistake our previous version for the user's original About logo.
+ABOUT="$HOME/.config/omarchy/branding/about.txt"
+ABOUT_WAS_OURS=0
+if [[ -f $ABOUT && -f $OZ_DIR/about.txt ]] && cmp -s "$ABOUT" "$OZ_DIR/about.txt"; then
+  ABOUT_WAS_OURS=1
+fi
+# Short ANSI palette codes keep Omarchy's About measurement compact.
+cp "$HERE/art/ozark-ridge.ansi.txt" "$OZ_DIR/about.txt"
+if (( ABOUT_WAS_OURS )); then cp "$OZ_DIR/about.txt" "$ABOUT"; fi
 cp "$HERE/greeting.sh" "$OZ_DIR/greeting.sh"
-cp "$HERE/art/hawksbill-crag.txt" "$OZ_DIR/hawksbill-crag.txt"
+cp "$HERE/art/luna-moth.txt" "$HERE/art/luna-moth.ansi.txt" "$OZ_DIR/"
+rm -f "$OZ_DIR/hawksbill-crag.txt"
 
 remove_bashrc_block
 cat >> "$BASHRC" <<BLOCK

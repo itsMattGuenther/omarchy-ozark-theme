@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="896" height="576" viewBox="0 0 224 144">
+  <title>Night flight — an Ozark luna moth</title>
+  <desc>Sweeping wings, four copper eyespots and long ribbon tails beneath a
+    crescent. Broad ink edges and open veins are drawn for a 112 by 72 dot grid.</desc>
+  <rect width="224" height="144" fill="#171525"/>
+  <!-- Background-coloured cuts become open space in the terminal. -->
+  <path d="M120 5a14 14 0 1 0 4 23A15 15 0 0 1 120 5Z" fill="#ef9268"/>
+  <g fill="#dcb473">
+    <path d="m68 12 1.5 4.5L74 18l-4.5 1.5L68 24l-1.5-4.5L62 18l4.5-1.5Z"/>
+    <path d="m161 18 1 3 4 1-4 1-1 4-1-4-3-1 3-1Z"/>
+    <circle cx="43" cy="9" r="1.4"/><circle cx="183" cy="10" r="1.4"/>
+    <circle cx="25" cy="101" r="1.5"/><circle cx="199" cy="101" r="1.5"/>
+  </g>
+  <defs>
+    <g id="wings" stroke-linejoin="round" stroke-linecap="round">
+      <!-- A hooked forewing with a hollow centre. -->
+      <path d="M109 62C90 48 56 36 13 30C15 49 29 69 47 79
+        C64 89 89 83 109 69Z" fill="#9cbe80"/>
+      <path d="M99 62C78 53 45 41 24 39C32 55 44 68 57 74
+        C71 80 89 72 99 66Z" fill="#171525"/>
+      <path d="M15 31C46 33 83 48 108 59" fill="none" stroke="#c58fb8" stroke-width="3"/>
+      <g fill="none" stroke="#9cbe80" stroke-width="2.2">
+        <path d="M103 63Q69 53 34 45M102 65Q72 62 46 59M102 67Q81 72 67 77"/>
+      </g>
+      <!-- Lower wing and the characteristic curling tail. -->
+      <path d="M106 73C91 80 66 80 51 78C50 88 57 99 70 102
+        C81 105 83 116 76 128C69 138 55 135 53 125
+        C50 140 68 145 80 135C93 124 89 108 87 100
+        C102 99 109 89 110 77Z" fill="#7fb6c4"/>
+      <path d="M102 81Q85 89 60 85Q64 96 78 96Q91 100 102 86Z" fill="#171525"/>
+      <path d="M97 86Q82 95 82 113" fill="none" stroke="#9cbe80" stroke-width="2.2"/>
+      <ellipse cx="66" cy="59" rx="7" ry="6" fill="#ef9268"/>
+      <ellipse cx="66" cy="59" rx="3" ry="2.8" fill="#171525"/>
+      <ellipse cx="79" cy="89" rx="5" ry="4" fill="#dcb473"/>
+      <ellipse cx="79" cy="89" rx="2" ry="1.8" fill="#171525"/>
+    </g>
+  </defs>
+  <use href="#wings"/>
+  <use href="#wings" transform="translate(224 0) scale(-1 1)"/>
+  <g fill="none" stroke="#dcb473" stroke-width="2.4" stroke-linecap="round">
+    <path d="M109 53Q106 40 98 38M115 53Q118 40 126 38"/>
+    <path d="m100 40-1 6m5-4-1 7m21-9 1 6m-5-4 1 7"/>
+  </g>
+  <ellipse cx="112" cy="69" rx="4" ry="15" fill="#dcb473"/>
+  <path d="M109 82Q112 98 115 82" fill="#ef9268"/>
+  <circle cx="112" cy="53" r="4" fill="#dcb473"/>
+</svg>

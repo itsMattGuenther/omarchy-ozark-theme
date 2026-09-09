@@ -1,46 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="640" viewBox="0 0 256 160">
-  <title>Ozark ridgeline — last light in the hollows</title>
-  <desc>Three overlapping, eroded ridges below a setting sun, framed by cedars.
-    Open hatching and a winding hollow replace solid bands of dots.</desc>
-  <rect width="256" height="160" fill="white"/>
+  <title>Blue hour — moonrise over the Ozark hollows</title>
+  <desc>A harvest moon above receding blue ridges, cedar silhouettes and a
+    luminous river. Sparse slope engraving and broken mist leave the valley open.</desc>
+  <rect width="256" height="160" fill="#171525"/>
   <defs>
-    <g id="cedar" fill="black">
-      <path d="M0 0l-4 9h3l-7 8h5l-9 9h6l-9 10 12-3v8h5v-8l12 3
-        -9-10h6l-9-9h5l-7-8h3Z"/>
+    <g id="cedar" fill="#9cbe80">
+      <path d="M0 0-3 10-8 15-3 14-6 22-13 27-5 25-10 33-19 38-6 35
+        -11 43-22 48-7 45-2 43-2 55H2V43L8 46 20 48 10 41 6 35
+        17 38 10 31 5 25 12 27 6 19 3 14 7 15 3 9Z"/>
     </g>
   </defs>
-  <!-- The sun disappears behind the far plateau. -->
-  <circle cx="177" cy="40" r="16" fill="none" stroke="black" stroke-width="2.2"/>
-  <g fill="none" stroke="black" stroke-width="1.9" stroke-linecap="round">
-    <path d="M119 28h20m66-8h13m-3 26h24M27 37h21m8 0h9"/>
+  <circle cx="183" cy="29" r="21" fill="#dcb473"/>
+  <g fill="none" stroke="#171525" stroke-width="2.2">
+    <circle cx="174" cy="22" r="4"/><path d="M192 33a5 5 0 0 1-6 6"/>
   </g>
-  <!-- White fills occlude the earlier contours; ridges never cross. -->
-  <g fill="none" stroke="black" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round">
-    <path fill="white" stroke="none" d="M6 71l17-8 14 1 15-8 15 2 17 8 19 1 21-10 14 2
-      15-10 20-2 13 4 16-4 14 6 14-1 19 7V151H6Z"/>
-    <path d="M6 71l17-8 14 1 15-8 15 2 17 8 19 1 21-10 14 2
-      15-10 20-2 13 4 16-4 14 6 14-1 19 7"/>
-    <path fill="white" stroke="none" d="M6 83l19-1 18-7 14 2 18-8 13 1 18 8 18 4 23 11
-      20 3 18-4 19 3 16 6 17-1 11 3V151H6Z"/>
-    <path d="M6 83l19-1 18-7 14 2 18-8 13 1 18 8 18 4 23 11
-      20 3 18-4 19 3 16 6 17-1 11 3"/>
-    <path fill="white" stroke="none" d="M6 123l24-6 19 3 16-5 22 2 20-7 18 1 23-9 17-1
-      21-12 20-3 17-9 14 2 11-5V151H6Z"/>
-    <path d="M6 123l24-6 19 3 16-5 22 2 20-7 18 1 23-9 17-1
-      21-12 20-3 17-9 14 2 11-5"/>
+  <g fill="#dcb473">
+    <path d="m116 9 1 4 4 1-4 1-1 4-1-4-4-1 4-1Z"/>
+    <path d="m232 26 1 4 4 1-4 1-1 4-1-4-4-1 4-1Z"/>
+    <circle cx="69" cy="18" r="1.2"/><circle cx="143" cy="28" r="1.3"/>
+    <circle cx="216" cy="10" r="1.2"/><circle cx="92" cy="35" r="1.2"/>
   </g>
-  <!-- Broken marks suggest wooded slopes without filling the valley. -->
-  <g fill="none" stroke="black" stroke-width="1.9" stroke-linecap="round">
-    <path d="M144 62l12-8m12 9 10-7m16 9 9-6m15 9 11-6"/>
-    <path d="M39 90l15-8m10 11 14-11m9 17 10-11m10 17 8-8"/>
-    <path d="M137 120l16-11m-2 17 18-14m1 8 19-17m3 9 17-16m4 9 17-14"/>
-    <!-- A ribbon of water opens toward the viewer. -->
-    <path d="M108 120q-28 5-10 11t-9 15m25-25q-20 5-2 10t-4 15"/>
-    <path d="M53 136l14-4 12 1m57 7 14-4 17 1m-137 9h37m98 0h37"/>
+  <!-- Each nearer ridge occludes the one behind. -->
+  <g fill="#171525" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M7 66 29 57 47 58 66 49 84 47 101 51 119 48 139 52 154 45
+      173 46 188 53 207 50 223 54 248 46V157H7Z"/>
+    <path d="M7 66 29 57 47 58 66 49 84 47 101 51 119 48 139 52 154 45
+      173 46 188 53 207 50 223 54 248 46" fill="none" stroke="#9990b0" stroke-width="2.2"/>
+    <path d="M8 79 29 71 47 72 64 62 85 63 109 72 126 80 145 78 163 71
+      181 70 202 62 226 65 248 60V157H8Z"/>
+    <path d="M8 79 29 71 47 72 64 62 85 63 109 72 126 80 145 78 163 71
+      181 70 202 62 226 65 248 60" fill="none" stroke="#8aa8de" stroke-width="2.8"/>
+    <path d="M7 64Q27 55 46 66L65 66 86 78Q100 87 119 90L143 103 124 116 7 136Z"/>
+    <path d="M7 64Q27 55 46 66L65 66 86 78Q100 87 119 90L143 103"
+      fill="none" stroke="#7fb6c4" stroke-width="3"/>
+    <path d="m249 79-20 5-15-2-21 9-16 2-20 9-15 3-15 8 18 18 104 15Z"/>
+    <path d="m249 79-20 5-15-2-21 9-16 2-20 9-15 3-15 8"
+      fill="none" stroke="#8aa8de" stroke-width="3"/>
   </g>
-  <!-- Unequal clusters frame the view and leave the foreground open. -->
-  <use href="#cedar" transform="translate(18 89) scale(1.15 1.35)"/>
-  <use href="#cedar" transform="translate(41 110) scale(.8 .9)"/>
-  <use href="#cedar" transform="translate(230 99) scale(1 1.18)"/>
-  <use href="#cedar" transform="translate(210 122) scale(.65 .65)"/>
+  <g fill="none" stroke="#7fb6c4" stroke-width="2" stroke-linecap="round">
+    <path d="m48 77 18 9m-1-8 21 11m0-4 21 11m-45-1 26 11m-46-4 21 9"/>
+  </g>
+  <g fill="none" stroke="#8aa8de" stroke-width="2" stroke-linecap="round">
+    <path d="m176 107 22-9m-4 15 26-13m-8 17 21-10m-16-20 19-9"/>
+  </g>
+  <!-- Horizontal mist leaves gaps between the plateaus. -->
+  <g fill="none" stroke="#9990b0" stroke-width="1.8" stroke-linecap="round">
+    <path d="M117 64h29m9 0h9M103 75h18m6 0h20M79 119h21m-44 9h23m113-1h21"/>
+  </g>
+  <!-- The S bend widens towards the viewer. -->
+  <path d="M145 103C130 109 112 110 117 117C122 124 172 122 174 134
+    C176 145 139 148 125 157H95C106 144 157 141 157 134
+    C157 129 112 128 108 119C104 110 131 108 145 103Z" fill="#7fb6c4"/>
+  <path d="M149 128Q179 136 119 151" fill="none" stroke="#171525" stroke-width="2.5"/>
+  <g stroke="#dcb473" stroke-width="2" stroke-linecap="round">
+    <path d="M125 116h12m-3 19h13m-34 19h14"/>
+  </g>
+  <use href="#cedar" transform="translate(29 41) scale(1 1.85)"/>
+  <use href="#cedar" transform="translate(53 99) scale(.6 .88)"/>
+  <use href="#cedar" transform="translate(233 103) scale(.65 .86)"/>
+  <path d="M7 153q15-7 28-5t27 3m137 3q17-6 48 0" fill="none"
+    stroke="#9cbe80" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

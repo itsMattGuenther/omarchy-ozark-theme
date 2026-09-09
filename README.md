@@ -20,8 +20,8 @@ teal-and-olive forest. Dark first, readable always.
 - **Eight 4K wallpapers**: cell-shaded mountains, brush-painted mountains,
   a moonlit bluff blockprint, and an abstract contour map, each with and
   without the Omarchy wordmark.
-- **Optional extras**: Braille art of Hawksbill Crag greeting you in every new
-  terminal, an Ozark ridgeline on the About screen, and a matching theme for
+- **Optional extras**: a luna moth in colored Braille greeting you in every new
+  terminal, moonlit Ozark hollows on the About screen, and a matching theme for
   the cliamp music player.
 
 ## 📦 Install
@@ -62,26 +62,29 @@ the theme folder.
 
 ## 🖼️ The art
 
-![Hawksbill Crag and the Ozark ridgeline](docs/preview-art.png)
+![Night Flight luna moth and Blue Hour Ozark hollows](docs/preview-art.png)
 
-Two original pieces of Braille art, drawn as vectors for the terminal's small
-dot grid. The crag has a wind-shaped cedar and open sandstone strata; the
-ridgeline uses overlapping hills, a setting sun, and a winding hollow.
+Two original pieces of colored Braille art, drawn as vectors for the terminal's
+small dot grid. Broad silhouettes, open wing veins, and separate colors for the
+landscape layers bring the Ozarks into the terminal after dark.
 
-**Hawksbill Crag** — an interpretation of the overhanging ledge at Whitaker
-Point — greets you in every new terminal:
+**Night Flight** — a luna moth with sweeping green wings, copper eyespots,
+blue ribbon tails, and a crescent overhead — greets you in every new terminal.
+Stay a little wild.
 
 ![Terminal greeting](docs/preview-greeting.png)
 
-**The Ozark ridgeline** takes over the About screen, sized so Omarchy's own
-window measurement fits around it:
+**Blue Hour** — a golden moon above receding Ozark ridges, green cedars, and
+a bright river curling through the hollow — takes over the About screen:
 
 ![About screen](docs/preview-about.png)
 
-Both live in `extras/art/` as plain text, with the SVG sources and a reproducible
-converter next to them. The greeting stays 56 columns by 18 rows, and the
-About art stays 64 columns by 20 rows. The artwork previews above render the
-actual text files.
+Both live in `extras/art/` as plain text and ANSI color text, with editable SVGs
+and a reproducible converter next to them. The greeting is 56 columns by 18
+rows; About is 64 columns by 20 rows. About uses short terminal palette codes
+to keep Omarchy's window measurement compact. The artwork preview renders the
+actual color text files; the greeting and About images are desktop captures.
+Set `NO_COLOR=1` for a monochrome greeting.
 
 ## 🎵 cliamp
 
@@ -134,8 +137,10 @@ To remove all of it:
   unsharp pass; if you re-render the sources at native 4K they will be sharper
   than any upscale.
 - The Braille art is generated from `extras/art/*.svg`. Edit the vectors, then
-  run `python3 extras/art/render.py` (requires ImageMagick). The converter
-  preserves both pieces' terminal dimensions.
+  run `python3 extras/art/render.py` (requires Python 3.11+ and ImageMagick).
+  The converter preserves both pieces' terminal dimensions and generates
+  plain and ANSI text. `python3 extras/art/preview.py` rebuilds the artwork
+  comparison using JetBrainsMono Nerd Font.
 
 ## 🙏 Credits
 
