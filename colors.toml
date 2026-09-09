@@ -1,0 +1,36 @@
+# Starter palette - neutral dark, passes contrast. Replace with your own.
+# Define EVERY key: Omarchy derives missing ones badly.
+mode = "dark"
+
+accent    = "#8ab0f0"
+selection = "#2a3050"
+muted     = "#9c9cab"
+
+background         = "#101014"
+dark_background    = "#0a0a0d"
+darker_background  = "#060608"
+lighter_background = "#1b1b22"
+
+foreground        = "#d2d2da"
+dark_foreground   = "#a2a2b0"
+light_foreground  = "#e0e0e8"
+bright_foreground = "#eeeef4"
+
+red     = "#f07178"
+yellow  = "#e0c07a"
+orange  = "#e09b5a"
+green   = "#7fca9a"
+cyan    = "#74c7d4"
+blue    = "#8ab0f0"
+magenta = "#cfa0e0"
+brown   = "#c09a7a"
+
+bright_red     = "#f78c92"
+bright_yellow  = "#ecd08a"
+bright_green   = "#95d8ad"
+bright_cyan    = "#8bd7e2"
+bright_blue    = "#a3c2f5"
+bright_magenta = "#dbb5e9"
+
+hyprland_active_border   = "#8ab0f0 #2a3050 45deg"
+hyprland_inactive_border = "rgba(3a3a45aa)"
