@@ -1,3 +1,29 @@
-out/
+# Local generation notes and scratch exports
+/docs/wallpaper-prompts.md
+/out/
+/output/
+/tmp/
+
+# Local agent, editor, and Python state
+/.agents/
+/.codex/
+/.idea/
+/.vscode/
+/.venv/
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Temporary files, backups, and OS metadata
 *.tmp
+*.log
+*.bak
+*.bak.*
+*.swp
+*.swo
+*~
 .DS_Store

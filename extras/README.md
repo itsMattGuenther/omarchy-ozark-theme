@@ -9,6 +9,7 @@ place (and `install.sh --uninstall` takes them out again):
   (`~/.config/omarchy/branding/about.txt`) so Omarchy sizes the About window
   to fit it
 - `art/*.svg` — the vector sources both pieces were converted from
+- `art/render.py` — regenerates both text files from their SVG sources
 - `greeting.sh` — prints the crag, only while this theme is active
 - `../hooks/ozark-theme-set.sh` — switches cliamp and the About logo with the
   theme. Named after the theme on purpose: `omarchy hook install` copies by
@@ -16,12 +17,14 @@ place (and `install.sh --uninstall` takes them out again):
 
 ## Redrawing the art
 
-Both pieces come from the SVGs in `art/`. To regenerate after an edit:
+Both pieces come from the SVGs in `art/`. The drawings use black for dots
+and white for open space. To regenerate after an edit, with Python 3 and
+ImageMagick installed, run from the repository root:
 
 ```bash
-magick art/hawksbill-crag.svg -background white -alpha remove -alpha off /tmp/crag.png
-braille.py /tmp/crag.png --width 56 --height 18 --threshold 150 > art/hawksbill-crag.txt
+python3 extras/art/render.py
 ```
 
-Keep the character width the same or the art will not line up with the About
-window Omarchy measures for it.
+The converter fixes Hawksbill Crag at 56 columns by 18 rows and the ridgeline
+at 64 columns by 20 rows. It preserves blank Braille cells, including those
+at the ends of lines, so Omarchy measures the full About canvas.

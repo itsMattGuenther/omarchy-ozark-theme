@@ -17,8 +17,9 @@ teal-and-olive forest. Dark first, readable always.
   Neovim, btop, Helix, the Omarchy bar, launcher, notifications, lock screen,
   Chromium, VS Code, Obsidian, Claude Code, and the keyboard backlight.
 - **Window borders** fade from sunset coral into ridge violet.
-- **Six 4K wallpapers** in three illustration styles, with and without the
-  Omarchy wordmark.
+- **Eight 4K wallpapers**: cell-shaded mountains, brush-painted mountains,
+  a moonlit bluff blockprint, and an abstract contour map, each with and
+  without the Omarchy wordmark.
 - **Optional extras**: Braille art of Hawksbill Crag greeting you in every new
   terminal, an Ozark ridgeline on the About screen, and a matching theme for
   the cliamp music player.
@@ -40,10 +41,22 @@ omarchy theme bg next        # cycle wallpapers
 
 ![Wallpapers](docs/wallpapers.jpg)
 
-Six variants live in `backgrounds/`, all 3840x2160: the original illustration,
-a brush-painted version, and a flat cell-shaded version, each with and without
-the Omarchy wordmark. They sort by filename, so the numbered prefixes decide
-the order `omarchy theme bg next` walks. Add your own next to them, or drop
+Eight variants live in `backgrounds/`, all exported at 3840x2160. Each design
+has an Omarchy wordmark version followed by a version without lettering:
+
+| Design | With wordmark | Without wordmark |
+| --- | --- | --- |
+| Cell-shaded mountains | [01](backgrounds/01_ozark_mountains_cell_shaded_omarchy.jpg) | [02](backgrounds/02_ozark_mountains_cell_shaded.jpg) |
+| Brush-painted mountains | [03](backgrounds/03_ozark_mountains_brush_omarchy.jpg) | [04](backgrounds/04_ozark_mountains_brush.jpg) |
+| Moonlit bluff blockprint | [05](backgrounds/05_ozark_bluff_blockprint_omarchy.jpg) | [06](backgrounds/06_ozark_bluff_blockprint.jpg) |
+| Ozark contours | [07](backgrounds/07_ozark_contours_omarchy.jpg) | [08](backgrounds/08_ozark_contours.jpg) |
+
+The bluff and contour logo versions feature a large centered Omarchy wordmark:
+textured lavender ink on the bluff, and warm coral on the contour map. These
+images are AI-generated and upscaled to 4K.
+
+They sort by filename, so the numbered prefixes decide the order
+`omarchy theme bg next` walks. Add your own next to them, or drop
 extra images into `~/.config/omarchy/backgrounds/ozark/` to keep them out of
 the theme folder.
 
@@ -51,12 +64,12 @@ the theme folder.
 
 ![Hawksbill Crag and the Ozark ridgeline](docs/preview-art.png)
 
-Two original pieces of Braille art, drawn as vectors and converted dot by dot
-rather than traced from a photo.
+Two original pieces of Braille art, drawn as vectors for the terminal's small
+dot grid. The crag has a wind-shaped cedar and open sandstone strata; the
+ridgeline uses overlapping hills, a setting sun, and a winding hollow.
 
-**Hawksbill Crag** — the overhanging ledge at Whitaker Point in the Ozark
-National Forest, the most photographed spot in Arkansas — greets you in every
-new terminal:
+**Hawksbill Crag** — an interpretation of the overhanging ledge at Whitaker
+Point — greets you in every new terminal:
 
 ![Terminal greeting](docs/preview-greeting.png)
 
@@ -65,8 +78,10 @@ window measurement fits around it:
 
 ![About screen](docs/preview-about.png)
 
-Both live in `extras/art/` as plain text, with the SVG sources next to them so
-you can redraw or resize them.
+Both live in `extras/art/` as plain text, with the SVG sources and a reproducible
+converter next to them. The greeting stays 56 columns by 18 rows, and the
+About art stays 64 columns by 20 rows. The artwork previews above render the
+actual text files.
 
 ## 🎵 cliamp
 
@@ -119,7 +134,8 @@ To remove all of it:
   unsharp pass; if you re-render the sources at native 4K they will be sharper
   than any upscale.
 - The Braille art is generated from `extras/art/*.svg`. Edit the vectors, then
-  re-run the converter at the same character width to keep the proportions.
+  run `python3 extras/art/render.py` (requires ImageMagick). The converter
+  preserves both pieces' terminal dimensions.
 
 ## 🙏 Credits
 
