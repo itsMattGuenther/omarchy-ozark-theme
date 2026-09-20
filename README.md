@@ -1,6 +1,6 @@
 # 🏔️ Ozark
 
-An [Omarchy](https://omarchy.org) theme named for the Ozark mountains in
+An [Omarchy](https://omarchy.org) theme named for the Ozark Mountains in
 Northwest Arkansas. Indigo dusk, a coral sunset band, hazy blue ridges, and
 teal-and-olive forest. Dark first, readable always.
 
